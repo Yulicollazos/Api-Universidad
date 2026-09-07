@@ -1,0 +1,12 @@
+# Archivos generados al compilar .NET
+bin/
+obj/
+
+# Configuración interna de Visual Studio / VS Code
+.vs/
+
+# Datos locales o secretos
+appsettings.Development.json
+
+# Base de datos local (descomenta esta línea solo si NO necesitas entregarla)
+# universidad.db
