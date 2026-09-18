@@ -6,6 +6,8 @@ public class Estudiante
 
     public string Documento { get; set; } = string.Empty; 
 
+    public int Celular { get; set; } = 0 ;
+
     public string Nombre { get; set; } = string.Empty;
 
     public string Correo { get; set; } = string.Empty;
