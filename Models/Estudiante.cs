@@ -8,6 +8,8 @@ public class Estudiante
 
     public int Celular { get; set; } = 0 ;
 
+    public int Whatsapp { get; set; } = 0 ;
+
     public string Nombre { get; set; } = string.Empty;
 
     public string Correo { get; set; } = string.Empty;
