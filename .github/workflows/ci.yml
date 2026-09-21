@@ -1,0 +1,24 @@
+name: Compilar API .NET
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Configurar .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Restaurar dependencias
+        run: dotnet restore ProgramacionV.csproj
+
+      - name: Compilar API
+        run: dotnet build ProgramacionV.csproj --no-restore --configuration Release
